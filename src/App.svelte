@@ -70,6 +70,13 @@
 		padding: 0;
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	}
+
+	@media(prefers-color-scheme: dark) {
+		:global(body) {
+			background-color: #1a1a1a;
+			color: white;
+		}
+	}
 	
 	a {
 		color: white;
