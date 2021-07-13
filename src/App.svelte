@@ -6,7 +6,7 @@
   <div class="hero">
     <img src="/img/logo.png" alt="logo" class="logo"/>
     <h1>
-      <a href="https://github.com/OVRTools" target="_blank">OVRTools</a>
+      <a href="https://github.com/OVRTools" target="_blank" rel="noopener noreferrer">OVRTools</a>
     </h1>
     <p>
       A collection of open-source tools and libraries for OpenVR focused on making VR UX better.

@@ -11,7 +11,7 @@
   export let project: ProjectData
 </script>
 
-<a class="project" href="{project.link}" target="_blank">
+<a class="project" href="{project.link}" target="_blank" rel="noopener noreferrer">
   <div class="name">
     {project.name}
   </div>
