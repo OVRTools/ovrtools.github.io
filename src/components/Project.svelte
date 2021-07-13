@@ -11,9 +11,9 @@
   export let project: ProjectData
 </script>
 
-<div class="project">
+<a class="project" href="{project.link}" target="_blank">
   <div class="name">
-    <a href="{project.link}" target="_blank">{project.name}</a>
+    {project.name}
   </div>
   <div class="description">
     {project.description}
@@ -23,10 +23,11 @@
       <span class="tag">{tag}</span>
     {/each}
   </div>
-</div>
+</a>
 
 <style>
   .project {
+    transition: transform .1s;
     display: flex;
     flex-direction: column;
     color: white;
@@ -34,6 +35,15 @@
     padding: 10px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-decoration: none;
+  }
+
+  .project:hover {
+    transform: scale(1.01);
+  }
+
+  .project:active {
+    transform: scale(0.99);
   }
 
   a {
@@ -57,5 +67,6 @@
     padding: 5px;
     background: #206690;
     margin-right: 5px;
+    font-size: 0.8em;
   }
 </style>

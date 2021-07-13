@@ -44,6 +44,10 @@
 <div class="projects">
   <h1>Projects</h1>
 
+  <p>
+    Here's what we're working on. Select a project to see it on GitHub.
+  </p>
+
   <div class="projects-inner">
     {#each projects as project}
       <Project {project}/>
