@@ -65,21 +65,32 @@
     box-sizing: border-box;
   }
 
+  :global(:root) {
+    --background-color: white;
+    --foreground-color: black;
+    --theme-light: #176999;
+    --theme-dark: #111e3a;
+    --link-color: var(--theme-dark);
+  }
+
+  @media(prefers-color-scheme: dark) {
+    :global(:root) {
+      --background-color: var(--theme-dark);
+      --foreground-color: white;
+      --link-color: var(--foreground-color);
+    }
+  }
+
   :global(body) {
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-  @media(prefers-color-scheme: dark) {
-    :global(body) {
-      background-color: #1a1a1a;
-      color: white;
-    }
+    background-color: var(--background-color);
+    color: var(--foreground-color);
   }
   
   a {
-    color: white;
+    color: var(--link-color);
   }
 
   .logo {
@@ -88,8 +99,7 @@
   }
 
   .hero {
-    color: white;
-    background: linear-gradient(#176999, #111e3a);
+    background: linear-gradient(var(--theme-light), transparent);
     text-align: center;
     padding: 50px 10px;
   }
