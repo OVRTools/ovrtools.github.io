@@ -17,7 +17,7 @@
     {
       name: "WhereIsForward",
       description: "Helps you find the front and center of your VR space with an arrow.",
-      link: "https://github.com/OVRTools/WhereIsForward",
+      link: "/projects/whereisforward",
       githubRepo: "OVRTools/WhereIsForward",
       iconName: "whereisforward",
       tags: [

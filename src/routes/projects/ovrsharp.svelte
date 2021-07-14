@@ -109,6 +109,7 @@ OpenVR.Compositor.Submit(EVREye.Left, ref tex);`
   subtitle="High-level idiomatic C# interface for working with the OpenVR API"
   imageUrl="/img/projects/ovrsharp.svg"
   link="https://github.com/OVRTools/OVRSharp"
+  showOvrToolsSubtitle={true}
 />
 
 <div class="content wide">
@@ -277,7 +278,7 @@ OpenVR.Compositor.Submit(EVREye.Left, ref tex);`
   .content {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   .content.wide {
@@ -303,7 +304,7 @@ OpenVR.Compositor.Submit(EVREye.Left, ref tex);`
   }
 
   :global(h2 svg) {
-    margin-right: 5px;
+    margin-right: 3px;
   }
 
   :global(pre) {

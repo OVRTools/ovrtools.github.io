@@ -63,7 +63,7 @@
   .content {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   .content p {

@@ -3,6 +3,7 @@
   export let subtitle: string
   export let imageUrl: string
   export let link: string
+  export let showOvrToolsSubtitle: boolean = false
 </script>
 
 <div class="hero">
@@ -10,6 +11,11 @@
   <h1>
     <a href={link} target="_blank" rel="noopener noreferrer">{title}</a>
   </h1>
+  {#if showOvrToolsSubtitle}
+    <p>
+      A project from <a href="/">OVRTools</a>
+    </p>
+  {/if}
   <p>
     {subtitle}
   </p>
@@ -23,6 +29,6 @@
 
   .hero {
     text-align: center;
-    padding: 50px 10px;
+    padding: 30px 10px;
   }
 </style>
