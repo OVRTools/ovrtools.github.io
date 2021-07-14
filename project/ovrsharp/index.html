@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="/img/logo.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script async defer data-website-id="1f0b8fcc-200d-417d-98ca-482dad784e27" src="https://umami.horner.tj/umami.js"></script>
+		<meta name="theme-color"content="#176999">
+		<title>OVRSharp</title><!-- HTML_TAG_START --><style>/*
+ * Visual Studio 2015 dark style
+ * Author: Nicolas LLOBERA <nllobera@gmail.com>
+ */
+
+.hljs {
+  background: #1E1E1E;
+  color: #DCDCDC;
+}
+
+.hljs-keyword,
+.hljs-literal,
+.hljs-symbol,
+.hljs-name {
+  color: #569CD6;
+}
+.hljs-link {
+  color: #569CD6;
+  text-decoration: underline;
+}
+
+.hljs-built_in,
+.hljs-type {
+  color: #4EC9B0;
+}
+
+.hljs-number,
+.hljs-class {
+  color: #B8D7A3;
+}
+
+.hljs-string,
+.hljs-meta .hljs-string {
+  color: #D69D85;
+}
+
+.hljs-regexp,
+.hljs-template-tag {
+  color: #9A5334;
+}
+
+.hljs-subst,
+.hljs-function,
+.hljs-title,
+.hljs-params,
+.hljs-formula {
+  color: #DCDCDC;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #57A64A;
+  font-style: italic;
+}
+
+.hljs-doctag {
+  color: #608B4E;
+}
+
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+
+.hljs-tag {
+  color: #9B9B9B;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  color: #BD63C5;
+}
+
+.hljs-attr,
+.hljs-attribute {
+  color: #9CDCFE;
+}
+
+.hljs-section {
+  color: gold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+/*.hljs-code {
+  font-family:'Monospace';
+}*/
+
+.hljs-bullet,
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #D7BA7D;
+}
+
+.hljs-addition {
+  background-color: #144212;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-deletion {
+  background-color: #600;
+  display: inline-block;
+  width: 100%;
+}
+</style><!-- HTML_TAG_END -->
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-6780873f.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-39395073.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-58657174.js">
+		<link rel="modulepreload" href="/./_app/pages/project/ovrsharp.svelte-084455cd.js">
+		<link rel="modulepreload" href="/./_app/chunks/Hero-5d68cf5b.js">
+		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-b3dbf528.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/project/ovrsharp.svelte-ba813ef0.css">
+		<link rel="stylesheet" href="/./_app/assets/Hero-9c756553.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-6780873f.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-58657174.js"),
+						import("/./_app/pages/project/ovrsharp.svelte-084455cd.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/project/ovrsharp",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<main>
+
+<div class="hero svelte-2meybc"><img src="/img/logo.png" alt="logo" class="logo svelte-2meybc">
+  <h1><a href="https://github.com/OVRTools/OVRSharp" target="_blank" rel="noopener noreferrer">OVRSharp</a></h1>
+  <p>High-level idiomatic C# interface for working with the OpenVR API</p>
+</div>
+
+<div class="content wide svelte-147062r"><section class="svelte-147062r"><div class="grid svelte-147062r"><div class="svelte-147062r"><h2>
+<!-- HTML_TAG_START --><!-- HTML_TAG_END -->
+          With OVRSharp
+        </h2>
+
+        <p class="svelte-147062r">Beautiful. Immaculate. Easy to follow. Wow.</p>
+
+        
+  <pre class="hljs"><code><!-- HTML_TAG_START -->Application app;
+
+<span class="hljs-keyword">try</span> {
+  app = <span class="hljs-keyword">new</span> Application(ApplicationType.Overlay);
+} <span class="hljs-keyword">catch</span>(OpenVRSystemException e) {
+  <span class="hljs-comment">// Errors are exceptions!</span>
+}
+
+<span class="hljs-keyword">var</span> overlay = <span class="hljs-keyword">new</span> Overlay(<span class="hljs-string">&quot;cool_overlay&quot;</span>, <span class="hljs-string">&quot;Cool Overlay&quot;</span>, <span class="hljs-literal">true</span>) {
+  WidthInMeters = <span class="hljs-number">3.8f</span>
+};
+
+overlay.SetTextureFromFile(<span class="hljs-string">@&quot;C:\path\to\file.png&quot;</span>);
+overlay.SetThumbnailTextureFromFile(<span class="hljs-string">@&quot;C:\path\to\thumb.png&quot;</span>);<!-- HTML_TAG_END --></code></pre>
+
+
+        <p class="svelte-147062r">It&#39;s so much shorter that I could probably write a few more paragraphs
+          here to make this side as long as the other.
+        </p></div>
+
+      <div class="svelte-147062r"><h2>
+<!-- HTML_TAG_START --><!-- HTML_TAG_END -->
+          Without OVRSharp
+        </h2>
+
+        <p class="svelte-147062r">Awful. Hard to read. It&#39;s a mess.</p>
+
+        
+  <pre class="hljs"><code><!-- HTML_TAG_START --><span class="hljs-keyword">var</span> err = EVRInitError.None;
+<span class="hljs-keyword">var</span> vrSystem = OpenVR.Init(<span class="hljs-keyword">ref</span> err, EVRApplicationType.VRApplication_Overlay);
+
+<span class="hljs-keyword">if</span> (err != EVRInitError.None)
+{
+  <span class="hljs-comment">// whatever error handling</span>
+}
+
+<span class="hljs-comment">// Create a dashboard overlay</span>
+<span class="hljs-keyword">var</span> overlayErr = EVROverlayError.None;
+
+<span class="hljs-built_in">ulong</span> overlayHandle;
+<span class="hljs-built_in">ulong</span> thumbnailHandle;
+
+overlayErr = OpenVR.Overlay.CreateDashboardOverlay(<span class="hljs-string">&quot;cool_overlay&quot;</span>, <span class="hljs-string">&quot;Cool Overlay&quot;</span>, <span class="hljs-keyword">ref</span> overlayHandle, <span class="hljs-keyword">ref</span> thumbnailHandle);
+
+<span class="hljs-keyword">if</span> (overlayErr != EVROverlayError.None)
+{
+  <span class="hljs-comment">// whatever error handling</span>
+}
+
+overlayErr = OpenVR.Overlay.SetOverlayWidthInMeters(overlayHandle, <span class="hljs-number">3.8f</span>);
+
+<span class="hljs-keyword">if</span> (overlayErr != EVROverlayError.None)
+{
+  <span class="hljs-comment">// whatever error handling</span>
+}
+
+<span class="hljs-comment">// Set the dashboard overlay up. First, the main overlay&#x27;s texture</span>
+overlayErr = OpenVR.Overlay.SetOverlayFromFile(overlayHandle, <span class="hljs-string">@&quot;C:\path\to\file.png&quot;</span>);
+
+<span class="hljs-keyword">if</span> (overlayErr != EVROverlayError.None)
+{
+  <span class="hljs-comment">// whatever error handling</span>
+}
+
+<span class="hljs-comment">// Then the thumbnail.</span>
+overlayErr = OpenVR.Overlay.SetOverlayFromFile(thumbnailHandle, <span class="hljs-string">@&quot;C:\path\to\thumb.png&quot;</span>);
+
+<span class="hljs-keyword">if</span> (overlayErr != EVROverlayError.None)
+{
+  <span class="hljs-comment">// whatever error handling</span>
+}<!-- HTML_TAG_END --></code></pre>
+</div></div></section></div>
+
+<div class="content svelte-147062r"><section class="grid svelte-147062r"><div class="svelte-147062r"><h2>
+<!-- HTML_TAG_START --><!-- HTML_TAG_END -->
+        Lightweight
+      </h2>
+
+      <p class="svelte-147062r">OVRSharp can be integrated into any C# project, whether you&#39;re using
+        Unity, Godot, or even no engine at all. With a light footprint, you can
+        use as little or as much as you need.
+      </p></div>
+
+    <div class="svelte-147062r"><h2>
+<!-- HTML_TAG_START --><!-- HTML_TAG_END -->
+        Idiomatic
+      </h2>
+
+      <p class="svelte-147062r">Instead of accessing low-level APIs, dealing with pointers, and the
+        like, you can use the familiar .NET types and features you already know
+        and love.
+      </p></div>
+
+    <div class="svelte-147062r"><h2>
+<!-- HTML_TAG_START --><!-- HTML_TAG_END -->
+        Open source
+      </h2>
+
+      <p class="svelte-147062r">As with all our other projects, OVRSharp is open source. This means you
+        can benefit from the hard work of the community, as well as tweak and
+        improve the library to suit your needs.
+      </p></div></section>
+
+  <section class="svelte-147062r"><div class="grid svelte-147062r"><div>
+  <pre class="hljs"><code><!-- HTML_TAG_START --><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">MyCoolOverlay</span> : <span class="hljs-title">Overlay</span> {
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyCoolOverlay</span>(<span class="hljs-params"></span>)
+    : <span class="hljs-title">base</span>(<span class="hljs-params"><span class="hljs-string">&quot;my_cool_overlay&quot;</span>, <span class="hljs-string">&quot;My Cool Overlay&quot;</span></span>)</span>
+  {
+    <span class="hljs-comment">// Attach overlay to right hand</span>
+    TrackedDevice = TrackedDeviceRole.RightHand;
+
+    <span class="hljs-comment">// Set overlay from png</span>
+    SetTextureFromFile(<span class="hljs-string">&quot;cool_overlay.png&quot;</span>);
+  }
+}<!-- HTML_TAG_END --></code></pre>
+</div>
+
+      <div class="svelte-147062r"><p class="svelte-147062r">OVRSharp&#39;s simple API makes it easy to write overlays for OpenVR. Just
+          extend the Overlay class, implement your logic, and you&#39;re good to go.
+          The raw OpenVR API is hidden behind a simple interface.
+        </p></div></div></section>
+
+  <section class="svelte-147062r"><div class="grid svelte-147062r"><div>
+  <pre class="hljs"><code><!-- HTML_TAG_START --><span class="hljs-comment">// Use the DirectX implementation</span>
+<span class="hljs-keyword">var</span> compositor = DirectXCompositor.Instance;
+
+<span class="hljs-comment">// Get a Bitmap of what the headset sees</span>
+<span class="hljs-keyword">var</span> bitmap = compositor.GetMirrorImage();<!-- HTML_TAG_END --></code></pre>
+</div>
+
+      <div class="svelte-147062r"><p class="svelte-147062r">Some parts of the OpenVR API require specialized knowledge of graphics
+          APIs like OpenGL or DirectX. We&#39;ve abstracted these details away, so
+          you can focus on the core of your overlay.
+        </p></div></div></section>
+
+  <section class="svelte-147062r"><div class="grid svelte-147062r"><div>
+  <pre class="hljs"><code><!-- HTML_TAG_START --><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyCoolThing</span>(<span class="hljs-params">ICompositorAPI compositor</span>)</span> {
+  <span class="hljs-comment">// `compositor` could be using DirectX, OpenGL,</span>
+  <span class="hljs-comment">// or something else entirely!</span>
+}<!-- HTML_TAG_END --></code></pre>
+</div>
+
+      <div class="svelte-147062r"><p class="svelte-147062r">With an interface-based API, OVRSharp easily works with patterns like
+          dependency injection, so you don&#39;t need to worry about what&#39;s
+          happening under the hood.
+        </p></div></div></section>
+
+  <section class="svelte-147062r"><div class="grid svelte-147062r"><div>
+  <pre class="hljs"><code><!-- HTML_TAG_START --><span class="hljs-comment">// Building a VR game? You&#x27;ll need this.</span>
+<span class="hljs-comment">// And it&#x27;s gotta be fast!</span>
+OpenVR.Compositor.Submit(EVREye.Left, <span class="hljs-keyword">ref</span> tex);<!-- HTML_TAG_END --></code></pre>
+</div>
+
+      <div class="svelte-147062r"><p class="svelte-147062r">If you want to run &quot;close to the metal&quot;, you can still use the
+          underlying OpenVR API. This is useful if you need functionality that&#39;s
+          not yet available in the library or if performance is critical.
+        </p></div></div></section>
+
+  <section class="svelte-147062r"><h2>Get started</h2>
+
+    <p class="svelte-147062r">Ready to write your first VR overlay? Check out our
+      <a href="https://github.com/OVRTools/OVRSharp/wiki/Getting-Started" target="_blank" rel="noopener noreferrer">getting started</a>
+      guide, where you&#39;ll write your first overlay in a few minutes. You can also
+      check out the
+      <a href="https://github.com/OVRTools/OVRSharp" target="_blank" rel="noopener noreferrer">repository</a>
+      on GitHub, where you can find the source code for the library and get help
+      from the community.
+    </p></section>
+</div></main>
+
+<footer class="svelte-1cf7tv8"><div class="inner svelte-1cf7tv8">© OVRTools 2021 —
+    <a href="https://github.com/OVRTools" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+</footer>
+
+
+
+	
+</div>
+	</body>
+</html>
