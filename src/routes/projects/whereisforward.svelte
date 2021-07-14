@@ -1,21 +1,9 @@
 <script lang="ts">
   import Hero from "../../components/Hero.svelte"
-  import Highlight from "svelte-highlight"
-  import csharp from "svelte-highlight/src/languages/csharp"
-  import vs2015 from "svelte-highlight/src/styles/vs2015"
-  import { FontAwesomeIcon } from "fontawesome-svelte"
-  import {
-    faFeather,
-    faCode,
-    faBookOpen,
-    faSmile,
-    faFrown,
-  } from "@fortawesome/free-solid-svg-icons"
 </script>
 
 <svelte:head>
-  <title>OVRSharp</title>
-  {@html vs2015}
+  <title>WhereIsForward</title>
 </svelte:head>
 
 <Hero
