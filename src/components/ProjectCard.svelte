@@ -4,6 +4,7 @@
     description: string
     link: string
     githubRepo?: string
+    iconName?: string
     tags: string[]
   }
 </script>
@@ -15,6 +16,10 @@
   export let project: ProjectData
 
   let stars: number = null
+  const extraLinkAttrs = project.link && project.link.startsWith("http") ? {
+    target: "_blank",
+    rel: "noopener noreferrer"
+  } : { }
 
   const loadStars = async () => {
     if (!project.githubRepo) return
@@ -26,8 +31,11 @@
   loadStars()
 </script>
 
-<a class="project" href="{project.link}" target="_blank" rel="noopener noreferrer">
+<a class="project" href="{project.link}" {...extraLinkAttrs}>
   <div class="name">
+    {#if project.iconName}
+      <img src={`/img/projects/${project.iconName}.svg`} alt={`Logo for ${project.name}`}>
+    {/if}
     {project.name}
   </div>
   <div class="description">
@@ -83,6 +91,14 @@
   .name {
     font-weight: bold;
     margin-bottom: 3px !important;
+    vertical-align: middle;
+  }
+
+  .name img {
+    max-height: 15px;
+    position: relative;
+    top: 0.125em;
+    margin-right: 1px;
   }
   
   .description {

@@ -10,7 +10,7 @@
 <Hero
   title="OVRTools"
   link="https://github.com/OVRTools"
-  imageUrl="/img/logo.png"
+  imageUrl="/img/logo.svg"
   subtitle="A collection of open-source tools and libraries for OpenVR focused on making VR UX better." />
 
 <div class="content">

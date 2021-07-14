@@ -6,8 +6,9 @@
     {
       name: "OVRSharp",
       description: "High-level idiomatic C# interface for working with the OpenVR API.",
-      link: "/project/ovrsharp",
+      link: "/projects/ovrsharp",
       githubRepo: "OVRTools/OVRSharp",
+      iconName: "ovrsharp",
       tags: [
         "library",
         "c#"
@@ -18,6 +19,7 @@
       description: "Helps you find the front and center of your VR space with an arrow.",
       link: "https://github.com/OVRTools/WhereIsForward",
       githubRepo: "OVRTools/WhereIsForward",
+      iconName: "whereisforward",
       tags: [
         "app",
         "c#"
@@ -28,6 +30,7 @@
       description: "Taskbar app to monitor battery levels and see OpenVR device info.",
       link: "https://github.com/OVRTools/OpenVRDeviceBattery",
       githubRepo: "OVRTools/OpenVRDeviceBattery",
+      iconName: "ovrdevicebattery",
       tags: [
         "app",
         "c#"
@@ -49,7 +52,7 @@
   <h1>Projects</h1>
 
   <p>
-    Here's what we're working on. Select a project to see it on GitHub.
+    Here's what we're working on. Select a project to see more details.
   </p>
 
   <div class="projects-inner">

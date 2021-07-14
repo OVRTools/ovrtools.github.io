@@ -107,7 +107,7 @@ OpenVR.Compositor.Submit(EVREye.Left, ref tex);`
 <Hero
   title="OVRSharp"
   subtitle="High-level idiomatic C# interface for working with the OpenVR API"
-  imageUrl="/img/logo.png"
+  imageUrl="/img/projects/ovrsharp.svg"
   link="https://github.com/OVRTools/OVRSharp"
 />
 
