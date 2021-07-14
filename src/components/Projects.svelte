@@ -1,12 +1,13 @@
 <script lang="ts">
-  import Project from "./Project.svelte"
-  import type { ProjectData } from "./Project.svelte"
+  import ProjectCard from "./ProjectCard.svelte"
+  import type { ProjectData } from "./ProjectCard.svelte"
 
   const projects: ProjectData[] = [
     {
       name: "OVRSharp",
       description: "High-level idiomatic C# interface for working with the OpenVR API.",
-      link: "https://github.com/OVRTools/OVRSharp",
+      link: "/project/ovrsharp",
+      githubRepo: "OVRTools/OVRSharp",
       tags: [
         "library",
         "c#"
@@ -16,6 +17,7 @@
       name: "WhereIsForward",
       description: "Helps you find the front and center of your VR space with an arrow.",
       link: "https://github.com/OVRTools/WhereIsForward",
+      githubRepo: "OVRTools/WhereIsForward",
       tags: [
         "app",
         "c#"
@@ -25,6 +27,7 @@
       name: "OpenVRDeviceBattery",
       description: "Taskbar app to monitor battery levels and see OpenVR device info.",
       link: "https://github.com/OVRTools/OpenVRDeviceBattery",
+      githubRepo: "OVRTools/OpenVRDeviceBattery",
       tags: [
         "app",
         "c#"
@@ -34,6 +37,7 @@
       name: "ovrtools.github.io",
       description: "This very website!",
       link: "https://github.com/OVRTools/ovrtools.github.io",
+      githubRepo: "OVRTools/ovrtools.github.io",
       tags: [
         "svelte"
       ]
@@ -50,7 +54,7 @@
 
   <div class="projects-inner">
     {#each projects as project}
-      <Project {project}/>
+      <ProjectCard {project}/>
     {/each}
   </div>
 </div>
