@@ -1,5 +1,6 @@
 {
-  "name": "~TODO~",
+  "name": "ovrtools.github.io",
+  "private": true,
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
