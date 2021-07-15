@@ -188,7 +188,7 @@ OpenVR.Compositor.Submit(EVREye.Left, ref tex);`
   </section>
 
   <section>
-    <div class="grid">
+    <div class="grid code-example">
       <div>
         <Highlight language={csharp} code={overlayExample} />
       </div>
@@ -204,7 +204,7 @@ OpenVR.Compositor.Submit(EVREye.Left, ref tex);`
   </section>
 
   <section>
-    <div class="grid">
+    <div class="grid code-example">
       <div>
         <Highlight language={csharp} code={graphicsExample} />
       </div>
@@ -220,7 +220,7 @@ OpenVR.Compositor.Submit(EVREye.Left, ref tex);`
   </section>
 
   <section>
-    <div class="grid">
+    <div class="grid code-example">
       <div>
         <Highlight language={csharp} code={interfaceExample} />
       </div>
@@ -236,7 +236,7 @@ OpenVR.Compositor.Submit(EVREye.Left, ref tex);`
   </section>
 
   <section>
-    <div class="grid">
+    <div class="grid code-example">
       <div>
         <Highlight language={csharp} code={compositorSubmitExample} />
       </div>
@@ -301,6 +301,10 @@ OpenVR.Compositor.Submit(EVREye.Left, ref tex);`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     column-gap: 20px;
+  }
+
+  .grid.code-example {
+    row-gap: 20px;
   }
 
   :global(h2 svg) {
