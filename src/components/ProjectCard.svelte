@@ -21,11 +21,26 @@
     rel: "noopener noreferrer"
   } : { }
 
+  const sessionStorageKey = `stars_${project.githubRepo}`
+
+  const loadCachedStars = (): boolean => {
+    const cached = sessionStorage.getItem(sessionStorageKey)
+    
+    if (cached) {
+      stars = parseInt(cached)
+      return true
+    }
+    
+    return false
+  }
+
   const loadStars = async () => {
     if (!project.githubRepo) return
+    if (loadCachedStars()) return
     const response = await fetch(`https://api.github.com/repos/${project.githubRepo}`)
     const data = await response.json()
     stars = data.stargazers_count
+    sessionStorage.setItem(sessionStorageKey, `${stars}`)
   }
 
   loadStars()
