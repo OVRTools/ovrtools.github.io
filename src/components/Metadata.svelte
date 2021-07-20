@@ -2,14 +2,15 @@
   export let title: string = ""
   export let description: string = ""
   export let imageUrl: string = ""
+
+  if (title !== "")
+    title = `${title} - OVRTools`
+  else
+    title = "OVRTools"
 </script>
 
 <svelte:head>
-  {#if title !== ""}
-    <title>{title} - OVRTools</title>
-  {:else}
-    <title>OVRTools</title>
-  {/if}
+  <title>{title}</title>
 
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
