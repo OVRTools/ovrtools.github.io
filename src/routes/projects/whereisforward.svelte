@@ -1,10 +1,11 @@
 <script lang="ts">
+  import Metadata from "../../components/Metadata.svelte"
   import Hero from "../../components/Hero.svelte"
 </script>
 
-<svelte:head>
-  <title>WhereIsForward</title>
-</svelte:head>
+<Metadata
+  title="WhereIsForward"
+  description="Helps you find the front and center of your VR space with an arrow." />
 
 <Hero
   title="WhereIsForward"

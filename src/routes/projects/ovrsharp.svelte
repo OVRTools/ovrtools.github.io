@@ -11,6 +11,7 @@
     faSmile,
     faFrown,
   } from "@fortawesome/free-solid-svg-icons"
+  import Metadata from "../../components/Metadata.svelte"
 
   const withoutExample = `var err = EVRInitError.None;
 var vrSystem = OpenVR.Init(ref err, EVRApplicationType.VRApplication_Overlay);
@@ -99,14 +100,17 @@ var bitmap = compositor.GetMirrorImage();`
 OpenVR.Compositor.Submit(EVREye.Left, ref tex);`
 </script>
 
+<Metadata
+  title="OVRSharp"
+  description="High-level idiomatic C# interface for working with the OpenVR API." />
+
 <svelte:head>
-  <title>OVRSharp</title>
   {@html vs2015}
 </svelte:head>
 
 <Hero
   title="OVRSharp"
-  subtitle="High-level idiomatic C# interface for working with the OpenVR API"
+  subtitle="High-level idiomatic C# interface for working with the OpenVR API."
   imageUrl="/img/projects/ovrsharp.svg"
   link="https://github.com/OVRTools/OVRSharp"
   showOvrToolsSubtitle={true}

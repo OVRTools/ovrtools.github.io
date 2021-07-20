@@ -1,11 +1,12 @@
-<svelte:head>
-  <title>OVRTools</title>
-</svelte:head>
-
 <script lang="ts">
   import Projects from "../components/Projects.svelte"
   import Hero from "../components/Hero.svelte"
+  import Metadata from "../components/Metadata.svelte"
 </script>
+
+<Metadata
+  title="OVRSharp"
+  description="A collection of open-source tools and libraries for OpenVR focused on making VR UX better." />
 
 <Hero
   title="OVRTools"
