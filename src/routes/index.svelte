@@ -5,7 +5,6 @@
 </script>
 
 <Metadata
-  title="OVRSharp"
   description="A collection of open-source tools and libraries for OpenVR focused on making VR UX better." />
 
 <Hero
