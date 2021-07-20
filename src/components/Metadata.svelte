@@ -20,7 +20,7 @@
     <meta property="og:image" content={imageUrl} />
   {/if}
 
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@tjhorner" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
