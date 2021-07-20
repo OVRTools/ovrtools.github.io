@@ -1,7 +1,8 @@
 <script lang="ts">
   export let title: string = ""
   export let description: string = ""
-  export let imageUrl: string = "/img/logo.png"
+  // hate hardcoding the domain but oh well
+  export let imageUrl: string = "https://ovrtools.dev/img/logo.png"
 
   if (title !== "")
     title = `${title} - OVRTools`
