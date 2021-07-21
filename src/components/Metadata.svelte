@@ -10,7 +10,7 @@
 
   // I hate hardcoding the domain, but twitter wants a fully qualified
   // URL for the image
-  imageUrl = `https://ovrtools.dev${imageUrl}`
+  imageUrl = `https://ovrtools.dev${imageUrl}?${Date.now()}`
 </script>
 
 <svelte:head>
