@@ -1,13 +1,16 @@
 <script lang="ts">
   export let title: string = ""
   export let description: string = ""
-  // hate hardcoding the domain but oh well
-  export let imageUrl: string = "https://ovrtools.dev/img/logo.png"
+  export let imageUrl: string = "/img/logo.png"
 
   if (title !== "")
     title = `${title} - OVRTools`
   else
     title = "OVRTools"
+
+  // I hate hardcoding the domain, but twitter wants a fully qualified
+  // URL for the image
+  imageUrl = `https://ovrtools.dev${imageUrl}`
 </script>
 
 <svelte:head>
@@ -20,7 +23,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content={imageUrl} />
 
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="@tjhorner" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />

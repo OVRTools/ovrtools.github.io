@@ -5,7 +5,8 @@
 
 <Metadata
   title="WhereIsForward"
-  description="Helps you find the front and center of your VR space with an arrow." />
+  description="Helps you find the front and center of your VR space with an arrow."
+  imageUrl="/img/projects/whereisforward_cover.png" />
 
 <Hero
   title="WhereIsForward"

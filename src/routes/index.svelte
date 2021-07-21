@@ -5,7 +5,8 @@
 </script>
 
 <Metadata
-  description="A collection of open-source tools and libraries for OpenVR focused on making VR UX better." />
+  description="A collection of open-source tools and libraries for OpenVR focused on making VR UX better."
+  imageUrl="/img/ovrtools_cover.png" />
 
 <Hero
   title="OVRTools"

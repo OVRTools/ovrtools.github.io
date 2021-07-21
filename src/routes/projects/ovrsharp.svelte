@@ -102,7 +102,8 @@ OpenVR.Compositor.Submit(EVREye.Left, ref tex);`
 
 <Metadata
   title="OVRSharp"
-  description="High-level idiomatic C# interface for working with the OpenVR API." />
+  description="High-level idiomatic C# interface for working with the OpenVR API."
+  imageUrl="/img/projects/ovrsharp_cover.png" />
 
 <svelte:head>
   {@html vs2015}
